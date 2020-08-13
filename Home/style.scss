@@ -1,0 +1,273 @@
+@import "reset_plus.scss";
+
+//BLOK 1____________________________________________________________________________________________
+#blok1img{
+	height: 60vh;
+	width: 100%;
+	background-image: linear-gradient(30deg,#348f50,#56b4d3);
+	margin-bottom: 1rem;
+}
+
+#blok1tekst{
+	height: 60vh;
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	font-size: 4.5rem;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+.typewrite {
+	color:#fff;
+	text-decoration: none;
+	font-size: 2.5rem;
+	font-family: 'Arvo', serif;
+	position: absolute;
+	top: 42%;
+	text-align: center;
+	width: 100%;
+}
+
+//BLOK 2____________________________________________________________________________________________
+#blok2{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+//BLOK 3____________________________________________________________________________________________
+#blok3{
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1fr 0.3fr;
+	margin-bottom: 1rem;
+}
+
+#blok3img{
+	width: 100%;
+}
+
+#blok3tekst{
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(69,161,146);
+	color: white;
+	line-height: 1.4rem;
+	padding: 1rem;
+	display: inline-table;
+	height: 100%;
+}
+
+#blok3tekst p{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+}
+
+//BLOK 4____________________________________________________________________________________________
+#blok4{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+
+//BLOK 5____________________________________________________________________________________________
+#blok5{
+	width: 100%;
+	font-size: 2rem;
+	color: white;
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+}
+
+#titelblok5 h1{
+	background-color: white;
+	color: rgb(69,161,146);
+	border: 0.5rem solid rgb(69,161,146);
+	padding: 1rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+#onderdeel1{
+	animation-name: veranderkleur;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	width: 80%;
+	height: 5rem;
+	display: table;
+	margin-bottom: 3rem;
+}
+
+#onderdeel1 a{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding-left: 1rem;
+	text-decoration: none;
+	color: white;
+}
+
+#onderdeel1 a:hover{
+	transform: scale(1.1);
+	background-color: white;
+	border: 0.5rem solid rgb(69,161,146);
+	color: rgb(69,161,146);
+	transform: translate(10%);
+}
+
+#onderdeel2{
+	animation-name: veranderkleur;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	width: 80%;
+	height: 5rem;
+	display: table;
+	margin-bottom: 3rem;
+}
+
+#onderdeel2 a{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding-left: 1rem;
+	text-decoration: none;
+	color: white;
+}
+
+#onderdeel2 a:hover{
+	transform: scale(1.1);
+	background-color: white;
+	border: 0.5rem solid rgb(69,161,146);
+	color: rgb(69,161,146);
+	transform: translate(10%);
+}
+
+#onderdeel3{
+	animation-name: veranderkleur;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	width: 80%;
+	height: 5rem;
+	display: table;
+	margin-bottom: 3rem;
+}
+
+#onderdeel3 a{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding-left: 1rem;
+	text-decoration: none;
+	color: white;
+}
+
+#onderdeel3 a:hover{
+	transform: scale(1.1);
+	background-color: white;
+	border: 0.5rem solid rgb(69,161,146);
+	color: rgb(69,161,146);
+	transform: translate(10%);
+}
+
+//FOOTER____________________________________________________________________________________________
+footer{
+	height: 5vh;
+	width: 100%;
+	background-image: linear-gradient(30deg,#348f50,#56b4d3);
+	display: table;
+	padding: 1rem;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+footer p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+@keyframes veranderkleur{
+	0%{
+		background-color: #348f50;
+		transform: scaleY(1);
+		opacity: 1;
+	}
+	50%{
+		background-color: #56b4d3;
+		transform: scaleY(1.1);
+		opacity: 0.9;
+	}
+	100%{
+		background-color: #348f50;
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
+
+@media (min-width: 500px){
+	#blok4{
+		height: 40vh;
+	}
+}
+
+@media (min-width: 600px){
+	#blok3{
+		grid-template-columns: 1.5fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	#blok3tekst{
+		padding: 3rem;
+	}
+}
+
+@media (min-width: 900px){
+	#blok1img{
+		margin-bottom: 2rem;
+	}
+
+	#blok1tekst{
+		margin-bottom: 2rem;
+	}
+
+	#blok2{
+		margin-bottom: 2rem;
+	}
+
+	#blok3{
+		margin-bottom: 2rem;
+	}
+
+	#blok3tekst{
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	#blok4{
+		height: 60vh;
+		margin-bottom: 2rem;
+	}
+
+	#titelblok5 h1{
+		padding: 3rem;
+		font-size: 3rem;
+	}
+
+	#onderdeel1{
+		height: 7rem;
+	}
+
+	#onderdeel2{
+		height: 7rem;
+	}
+
+	#onderdeel3{
+		height: 7rem;
+	}
+}
+
+@media (min-width: 1200px){
+	#blok4{
+		height: 80vh;
+	}
+}
