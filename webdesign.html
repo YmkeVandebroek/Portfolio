@@ -1,43 +1,93 @@
 <!doctype html>
-<html>
+<html lang="nl">
 	<head>
-		<title>Ymke Vandebroek - Webdesign</title>
-		<link rel="icon" href="Home/img/favicon.png">
-		<link rel="stylesheet" type="text/css" href="Webdesign/reset_plus.css">
-		<link rel="stylesheet" type="text/css" href="Webdesign/style.css">
-		<script src="Webdesign/script.js" defer></script>
+		<link rel="icon" href="img/home/favicon.png">
+		<title>Ymke Vandebroek | Webdesign</title>
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+		<script src="https://unpkg.com/aos@2.3.0/dist/aos.js" defer></script>
+
+		<link rel='stylesheet' href="https://npmcdn.com/flickity@2/dist/flickity.css">
+		<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js" defer></script>
+
+		<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="CSS/reset_plus.css">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<link rel="stylesheet" type="text/css" href="CSS/webdesign.css">
+		<script src="JS/script.js" defer></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Arvo|Raleway&display=swap" rel="stylesheet">
 	</head>
 	<body>
-  	<header>
-  	</header>
-		<main>
-			<div id="blok1"><h1>Webdesign</h1></div>
-			<nav id="links">
-				<a href="index.html"><p>Home</p></a>
-        <a href="fotografie.html"><p>Fotografie</p></a>
-        <a href="gv.html"><p>Grafische vormgeving</p></a>
-        <a href="webdesign.html"><p>Webdesign</p></a>
+		<header>
+			<img class="menu" src="img/home/hamburger.png" alt="">
+			<h2>Ymke vandebroek</h2>
+			<nav>
+				<a class="navigatie" href="index.html">Home</a>
+				<a class="navigatie" href="wie.html">Wie ben ik?</a>
+				<a class="navigatie" href="fotografie.html">Fotografie</a>
+				<a class="navigatie" href="grafischevormgeving.html">Grafische vormgeving</a>
+				<a class="navigatie" href="webdesign.html">Webdesign</a>
+				<a class="navigatie" href="contact.html">Contact</a>
 			</nav>
-			<p class=info>Als u op een afbeelding drukt, wordt u doorverwezen naar de site.</p>
-			<div class="grid">
-				<a href="https://ymkevandebroek.github.io/Presentatie_Ymke-Vandebroek/" target="_blank"><img src="Webdesign/img/site1.png" alt=""></a>
-				<a href="https://ymkevandebroek.github.io/Platencollectie/" target="_blank"><img src="Webdesign/img/site2.png" alt=""></a>
-				<a href="https://ymkevandebroek.github.io/Peter-Paul-Rubens/" target="_blank"><img src="Webdesign/img/site3.png" alt=""></a>
-				<a href="https://ymkevandebroek.github.io/Gedichten-Generator/" target="_blank"><img src="Webdesign/img/site4.png" alt=""></a>
-				<a href="https://ymkevandebroek.github.io/Mars-Attacks/" target="_blank"><img src="Webdesign/img/site5.png" alt=""></a>
-				<a href="https://ymkevandebroek.github.io/OP3_Interviews/" target="_blank"><img src="Webdesign/img/site6.png" alt=""></a>
-				<a href="https://chiromeisjeswillebroek.github.io/Anti-verveel-pagina/" target="_blank"><img src="Webdesign/img/site13.gif" alt=""></a>
-				<a href="https://chiromeisjeswillebroek.github.io/Presentatie/" target="_blank"><img src="Webdesign/img/site14.gif" alt=""></a>
-				<a href="https://ymkevandebroek.github.io/Nieuwe-Digitap/" target="_blank"><img src="Webdesign/img/site7.png" alt=""></a>
-				<a href="http://oefening2.ymkevandebroek.be" target="_blank"><img src="Webdesign/img/site9.png" alt=""></a>
-				<a href="http://oefening4.ymkevandebroek.be/" target="_blank"><img src="Webdesign/img/site10.png" alt=""></a>
-				<a href="https://ymkevandebroek.github.io/Florke-Data/" target="_blank"><img src="Webdesign/img/site11.png" alt=""></a>
-				<a href="https://ymkevandebroek.github.io/Honger-in-de-wereld/" target="_blank"><img src="Webdesign/img/site12.png" alt=""></a>
+    </header>
+		<main>
+			<div class="hoofdtitel">
+				<h1 class="titel">Webdesign</h1>
+			</div>
+			<div class="blok">
+				<a href="https://ymkevandebroek.github.io/Presentatie_Ymke-Vandebroek/" target="blank"><img src="img/webdesign/site1.png" data-aos="example-anim3"></img></a>
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="https://ymkevandebroek.github.io/Presentatie_Ymke-Vandebroek/" target="blank">Eigen code</a>Presentatie waarin ik mezelf voorstel.</p></div>
+			</div>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="https://ymkevandebroek.github.io/Platencollectie/" target="blank">Eigen code</a>Eén van de eerste sites die ik maakte waarin ik mijn platencollectie toonde.</p></div>
+				<a href="https://ymkevandebroek.github.io/Platencollectie/" target="blank"><img src="img/webdesign/site2.png" data-aos="example-anim3"></img></a>
+			</div>
+			<div class="blok">
+				<a href="https://ymkevandebroek.github.io/Peter-Paul-Rubens/" target="blank"><img src="img/webdesign/site3.png" data-aos="example-anim3"></img></a>
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="https://ymkevandebroek.github.io/Peter-Paul-Rubens/" target="blank">Eigen code</a>Pagina over het leven van Rubens in gridvorm.</p></div>
+			</div>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="https://ymkevandebroek.github.io/Gedichten-Generator/" target="blank">Eigen code</a>Pagina die met zelfgekozen woorden een gedicht maakt.</p></div>
+				<a href="https://ymkevandebroek.github.io/Gedichten-Generator/" target="blank"><img src="img/webdesign/site4.png" data-aos="example-anim3"></img></a>
+			</div>
+			<div class="blok">
+				<a href="https://ymkevandebroek.github.io/Mars-Attacks/" target="blank"><img src="img/webdesign/site5.png" data-aos="example-anim3"></img></a>
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="https://ymkevandebroek.github.io/Mars-Attacks/" target="blank">Eigen code</a>Tekening volledig gemaakt in code.</p></div>
+			</div>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="https://ymkevandebroek.github.io/OP3_Interviews/" target="blank">Eigen code</a>Presentatie waarin quotes uit interviews verwerkt zijn i.v.m. het project Circulair-Zuid.</p></div>
+				<a href="https://ymkevandebroek.github.io/OP3_Interviews/" target="blank"><img src="img/webdesign/site6.png" data-aos="example-anim3"></img></a>
+			</div>
+			<div class="blok">
+				<a href="https://chiromeisjeswillebroek.github.io/Anti-verveel-pagina/" target="blank"><img src="img/webdesign/site13.gif" data-aos="example-anim3"></img></a>
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="https://chiromeisjeswillebroek.github.io/Anti-verveel-pagina/" target="blank">Eigen code</a>Anti-verveelpagina ontworpen voor Chiromeisjes Willebroek.</p></div>
+			</div>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="http://oefening4.ymkevandebroek.be/" target="blank">WordPress</a>E-commerce voor een denkbeeldige Fender-specialist.</p></div>
+				<a href="http://oefening4.ymkevandebroek.be/" target="blank"><img src="img/webdesign/site10.png" data-aos="example-anim3"></img></a>
+			</div>
+			<div class="blok">
+				<a href="https://chiromeisjeswillebroek.github.io/Presentatie/" target="blank"><img src="img/webdesign/site14.gif" data-aos="example-anim3"></img></a>
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="https://chiromeisjeswillebroek.github.io/Presentatie/" target="blank">Eigen code</a>Interactieve presentatie die Chiromeisjes Willebroek voorstelt.</p></div>
+			</div>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="http://oefening2.ymkevandebroek.be/" target="blank">WordPress</a>Voorbeeldsite voor Pita Geel.</p></div>
+				<a href="http://oefening2.ymkevandebroek.be/" target="blank"><img src="img/webdesign/site9.png" data-aos="example-anim3"></img></a>
+			</div>
+			<div class="blok">
+				<a href="https://ymkevandebroek.github.io/Florke-Data/" target="blank"><img src="img/webdesign/site11.png" data-aos="example-anim3"></img></a>
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="https://ymkevandebroek.github.io/Florke-Data/" target="blank">Eigen code</a>Pagina met de analyse over het blafgedrag van mijn hond.</p></div>
+			</div>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="https://ymkevandebroek.github.io/Honger-in-de-wereld/" target="blank">Eigen code</a>Pagina die de hongersnood in de wereld toont aan de hand van beeld en geluid.</p></div>
+				<a href="https://ymkevandebroek.github.io/Honger-in-de-wereld/" target="blank"><img src="img/webdesign/site12.png" data-aos="example-anim3"></img></a>
+			</div>
+			<div class="blok">
+				<a href="https://ymkevandebroek.github.io/Nieuwe-Digitap/" target="blank"><img src="img/webdesign/site7.png" data-aos="example-anim3"></img></a>
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="https://ymkevandebroek.github.io/Nieuwe-Digitap/" target="blank">Eigen code</a>Voorbeeldsite voor een nieuwe versie van Digitap.</p></div>
 			</div>
 		</main>
-		<footer><p>Ymke Vandebroek - 2020</p></footer>
+		<footer><h2>YmkeVandebroek 2020</h2></footer>
 	</body>
 </html>

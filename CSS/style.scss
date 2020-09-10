@@ -1,0 +1,560 @@
+html{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(221, 241, 242);
+}
+
+header{
+  background-color: rgb(255, 159, 88);
+  width: 100%;
+  position: relative;
+  display: table;
+}
+
+footer{
+  background-color: rgb(255, 159, 88);
+  width: 100%;
+  position: relative;
+  display: table;
+}
+
+.menu {
+  width: 5rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+h2{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3rem;
+  padding: 2rem;
+  color: white;
+}
+
+nav{
+	flex-direction: column;
+  margin-bottom: 1vh;
+  display: none;
+}
+
+nav a{
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Arvo', serif;
+}
+
+nav a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+video{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+//BLOK 1____________________________________________________________________________________________
+.hoofdtitel{
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: table;
+  background-color: rgb(73, 148, 135);
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.titel{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ymke{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.bloktitel{
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: table;
+  background-color: rgb(255, 159, 88);
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.cds{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.cds img{
+  width: 100%;
+}
+
+img{
+  width: 100%;
+}
+
+.blok{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Arvo', serif;
+}
+
+.blokymke{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Arvo', serif;
+}
+
+.blok img{
+  width: 100%;
+}
+
+span{
+  display: block;
+  font-family: 'Kaushan Script', cursive;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+a{
+  display: block;
+  font-family: 'Kaushan Script', cursive;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: white;
+}
+
+a:hover{
+  color: white;
+  transform: scale(1.1);
+}
+
+.bloktekst{
+  background-color: rgb(73, 148, 135);
+  line-height: 2rem;
+  padding: 1rem;
+  display: inline-table;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.bloktekstymke{
+  background-color: rgb(255, 159, 88);
+  line-height: 2rem;
+  padding: 2rem;
+  display: inline-table;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.bloktekstveeluitleg{
+  background-color: rgb(73, 148, 135);
+  line-height: 2rem;
+  padding: 1rem;
+  display: inline-table;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.bloktekstymke span{
+  text-align: center;
+}
+
+.bloktekst p{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.bottom{
+  margin-bottom: 1rem;
+}
+
+/* Animations */
+
+[data-aos="example-anim1"] {
+  transform-origin: bottom;
+  transition-timing-function: ease;
+  transform: rotateX(-90deg);
+  transition-property: transform;
+  &.aos-animate {
+    transform: rotateX(0deg);
+  }
+}
+
+[data-aos="example-anim2"] {
+  transition-timing-function: ease;
+  transform: translateX(2rem);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+[data-aos="example-anim2andersom"] {
+  transition-timing-function: ease;
+  transform: translateX(-2rem);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+[data-aos="example-anim3"] {
+  transition-timing-function: ease;
+  transform: scale(0);
+  transition-property: transform;
+  &.aos-animate {
+    transform: scale(1);
+  }
+}
+
+[data-aos="example-anim4"] {
+  transition-timing-function: ease;
+  opacity: (0);
+  transition-property: opacity;
+  &.aos-animate {
+    opacity: (1);
+  }
+}
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+.carousel{
+  margin-bottom: 3rem;
+}
+
+iframe{
+  width: 100%;
+}
+
+@media(min-width:600px){
+  body{
+    padding: 2rem;
+  }
+  .hoofdtitel{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .bloktitel{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .blok{
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+  }
+  .blokymke{
+    margin-bottom: 2rem;
+  }
+  a{
+    font-size: 2.5rem;
+  }
+  span{
+    font-size: 2.5rem;
+  }
+  .bloktekst{
+    height: 70%;
+    margin: 15% 0;
+    border-radius: 5%;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .bloktekstveeluitleg{
+    height: 70%;
+    margin: 15% 0;
+    border-radius: 5%;
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+  .carousel{
+    margin-bottom: 7rem;
+  }
+  .bottom{
+    margin-bottom: 2rem;
+  }
+  .ymke{
+    margin-bottom: 2rem;
+  }
+  video{
+    margin-bottom: 2rem;
+  }
+}
+
+@media(min-width:750px){
+  .hoofdtitel{
+    height: 60vh;
+  }
+  .bloktitel{
+    height: 60vh;
+  }
+  .ymke{
+    width: 50%;
+    margin: 0 25% 2rem 25%;
+  }
+  iframe{
+    height: 40rem;
+  }
+  .blokymke{
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    grid-gap: 5rem;
+  }
+  .bloktekstymke{
+    margin: 15% 0;
+    border-radius: 5%;
+    line-height: 1.2;
+  }
+}
+
+@media(min-width:900px){
+  body{
+    padding: 4rem;
+  }
+  .blok{
+    grid-gap: 5rem;
+    margin-bottom: 4rem;
+  }
+  .blokymke{
+    margin-bottom: 4rem;
+  }
+  .hoofdtitel{
+    margin-bottom: 4rem;
+  }
+  .ymke{
+    margin-bottom: 4rem;
+  }
+  .bloktitel{
+    margin-bottom: 4rem;
+  }
+  .carousel{
+    margin-bottom: 9rem;
+  }
+  .bottom{
+    margin-bottom: 4rem;
+  }
+  iframe{
+    height: 50rem;
+  }
+  .bloktekstymke{
+    margin: 15% 0;
+    border-radius: 5%;
+    line-height: 1.2;
+    font-size: 1.7rem;
+  }
+  video{
+    margin-bottom: 4rem;
+  }
+}
+
+@media(min-width:1100px){
+  body{
+    padding: 6rem;
+  }
+  .blok{
+    grid-gap: 7rem;
+    margin-bottom: 6rem;
+  }
+  .blokymke{
+    margin-bottom: 6rem;
+  }
+  .hoofdtitel{
+    margin-bottom: 6rem;
+  }
+  .ymke{
+    margin-bottom: 6rem;
+  }
+  .bloktitel{
+    margin-bottom: 6rem;
+  }
+  .carousel{
+    margin-bottom: 11rem;
+  }
+  .bottom{
+    margin-bottom: 6rem;
+  }
+  iframe{
+    height: 60rem;
+  }
+  .bloktekstymke{
+    margin: 15% 0;
+    border-radius: 5%;
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+  video{
+    margin-bottom: 6rem;
+  }
+  .bloktekstveeluitleg{
+    font-size: 2rem;
+  }
+}
+
+@media(min-width:1200px){
+  body{
+    padding: 8rem;
+  }
+  .blok{
+    grid-gap: 9rem;
+    margin-bottom: 8rem;
+  }
+  .blokymke{
+    margin-bottom: 8rem;
+  }
+  .hoofdtitel{
+    margin-bottom: 8rem;
+    font-size: 6rem;
+  }
+  .ymke{
+    margin-bottom: 8rem;
+  }
+  .bloktitel{
+    margin-bottom: 8rem;
+    font-size: 6rem;
+  }
+  .bloktekst{
+    font-size: 2.7rem;
+  }
+  span{
+    font-size: 4rem;
+  }
+  a{
+    font-size: 4rem;
+  }
+  .carousel{
+    margin-bottom: 13rem;
+  }
+  .bottom{
+    margin-bottom: 8rem;
+  }
+  video{
+    margin-bottom: 8rem;
+  }
+}
+
+@media(min-width:1300px){
+  body{
+    padding: 17rem;
+  }
+  .blok{
+    grid-gap: 16rem;
+    margin-bottom: 17rem;
+  }
+  .blokymke{
+    grid-gap: 16rem;
+    margin-bottom: 17rem;
+  }
+  .hoofdtitel{
+    margin-bottom: 17rem;
+  }
+  .ymke{
+    margin-bottom: 17rem;
+  }
+  .bloktitel{
+    margin-bottom: 17rem;
+  }
+  .carousel{
+    margin-bottom: 23rem;
+  }
+  .bottom{
+    margin-bottom: 17rem;
+  }
+  .bloktekstymke{
+    margin: 15% 0;
+    border-radius: 5%;
+    line-height: 1.2;
+  }
+  video{
+    margin-bottom: 17rem;
+  }
+}
+
+/*Photoswipe*/
+.pswp__caption__center {
+  text-align: center;
+}
+
+.gallery{
+  column-count: 1;
+}
+
+figure{
+  margin-bottom: -1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.spacer {
+  height: 5em;
+}
+
+@media(min-width: 500px){
+  .gallery{
+    column-count: 2;
+  }
+}
+
+@media(min-width: 1000px){
+  .gallery{
+    column-count: 3;
+  }
+}
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}

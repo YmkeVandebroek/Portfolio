@@ -1,37 +1,66 @@
 <!doctype html>
-<html>
+<html lang="nl">
 	<head>
-		<title>Ymke Vandebroek - Welkom</title>
-		<link rel="icon" href="Home/img/favicon.png">
-		<link rel="stylesheet" type="text/css" href="Home/style.css">
-		<script src="Home/script.js" defer></script>
+		<link rel="icon" href="img/home/favicon.png">
+		<title>Ymke Vandebroek | Home</title>
+
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+		<script src="https://unpkg.com/aos@2.3.0/dist/aos.js" defer></script>
+
+		<link rel='stylesheet' href="https://npmcdn.com/flickity@2/dist/flickity.css">
+		<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js" defer></script>
+
+		<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="CSS/reset_plus.css">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<link rel="stylesheet" type="text/css" href="CSS/index.css">
+		<script src="JS/script.js" defer></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Arvo|Raleway&display=swap" rel="stylesheet">
 	</head>
 	<body>
-  	<header>
-  	</header>
+    <header>
+			<img class="menu" src="img/home/hamburger.png" alt="">
+			<h2>Ymke vandebroek</h2>
+			<nav>
+				<a class="navigatie" href="index.html">Home</a>
+				<a class="navigatie" href="wie.html">Wie ben ik?</a>
+				<a class="navigatie" href="fotografie.html">Fotografie</a>
+				<a class="navigatie" href="grafischevormgeving.html">Grafische vormgeving</a>
+				<a class="navigatie" href="webdesign.html">Webdesign</a>
+				<a class="navigatie" href="contact.html">Contact</a>
+			</nav>
+    </header>
 		<main>
-			<div id="blok1img"></div>
-			<h1 id="blok1tekst">Ymke Vandebroek</h1>
-			<h2>
-				<a class="typewrite" data-period="2000" data-type='[ "Fotografie", "Webdesign", "Grafische vormgeving"]'><span class="wrap"></span></a>
-			</h2>
-			<video id="blok2" src="Home/video/logovideo.mp4" autoplay muted loop></video>
-			<div id="blok3">
-				<img id="blok3img" src="Home/img/Ymke.jpg" alt="">
-				<div id="blok3tekst"><p>Ik ben Ymke Vandebroek, een 20-jarige studente en ik studeer grafische en digitale media aan de Artesis Plantijn Hogeschool te Antwerpen, België. Ik zit nu in de richting crossmedia waarbij vooral gefocust wordt op online media. Alle content op deze pagina is door mezelf gemaakt. Het merendeel van de projecten is gemaakt voor school, maar fotografie doe ik als hobby. Ik verwelkom u graag op mijn zelfgemaakte portfoliosite!</p></div>
+			<div class="hoofdtitel">
+				<h1 class="titel">Home</h1>
 			</div>
-			<iframe id="blok4" src="https://ymkevandebroek.github.io/Presentatie_Ymke-Vandebroek/"></iframe>
-			<div id="blok5">
-				<div id="titelblok5"><h1>Werk</h1></div>
-				<div id="onderdeel1"><a href="fotografie.html">Fotografie</a></div>
-				<div id="onderdeel2"><a href="gv.html">Grafische vormgeving</a></div>
-				<div id="onderdeel3"><a href="webdesign.html">Webdesign</a></div>
+			<video src="img/home/logovideo.mp4" autoplay loop muted></video>
+			<div class="blokymke">
+				<img src="img/home/Ymke.jpg" alt="Ymke Vandebroek" data-aos="example-anim3">
+				<div class="bloktekstymke" data-aos="example-anim2"><p><span>Hallo!</span>Ik ben Ymke Vandebroek, een 20-jarige studente en ik studeer grafische en digitale media aan de Artesis Plantijn Hogeschool te Antwerpen, België. Ik zit nu in de richting crossmedia waarbij vooral gefocust wordt op online media. Alle content op deze pagina is door mezelf gemaakt. Het merendeel van de projecten is gemaakt voor school, maar fotografie doe ik als hobby. Ik verwelkom u graag op mijn zelfgemaakte portfoliosite!</p></div>
 			</div>
-			<div id="blok6"><div id="titelblok6"><a href="contact.html">Contact</a></div></div>
-		</main>
-		<footer><p>Ymke Vandebroek - 2020</p></footer>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="#">Wie ben ik?</a>Hier laat ik zien welke hobby's ik heb en wie mijn idolen zijn.</p></div>
+				<img src="img/ymkevandebroek.jpg" alt="Ymke Vandebroek met een brede lach." data-aos="example-anim3">
+			</div>
+			<div class="blok">
+				<img src="img/home/fotografie.jpg" alt="Foto met zwarte silhouetten van bomen met daarboven een wolk waarachter zonnestralen tevoorschijn komen" data-aos="example-anim3">
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="#">Fotografie</a>Ontdek hier mijn nieuwste foto's!</p></div>
+			</div>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="#">Grafische Vormgeving</a>Neem hier een kijkje in mijn werk gaande van posters tot lyric video's.</p></div>
+				<img src="img/home/grafischevormgeving.jpg" alt="Filmposter dat lijkt op oud papier met daarop de tekst A True Thriller Story met als schaduw de tekst Can you see his other side" data-aos="example-anim3">
+			</div>
+			<div class="blok">
+				<a href="https://chiromeisjeswillebroek.github.io/Anti-verveel-pagina/" target="blank"><img src="img/home/webdesign.gif" alt="Gif met daarop het opschrift Klik op deze video & ontdek de megacoole anti-verveelpagina van Chiromeisjes Willebroek" data-aos="example-anim3"></a>
+				<div class="bloktekst" data-aos="example-anim2"><p><a href="#">Webdesign</a>Vooral speelse experimenten met zelgeschreven code en enkele WordPress sites.</p></div>
+			</div>
+			<div class="blok">
+				<div class="bloktekst" data-aos="example-anim2andersom"><p><a href="#">Contact</a></p></div>
+				<img src="img/home/contact.svg" alt="Groot en klein rood uitroepteken" data-aos="example-anim3">
+			</div>
+			<footer><h2>YmkeVandebroek 2020</h2></footer>
 	</body>
 </html>
