@@ -54,6 +54,10 @@ video {
   width: 100%;
   margin-bottom: 1rem; }
 
+.hyperlink {
+  color: #ff9f58;
+  display: inline; }
+
 .hoofdtitel {
   height: 50vh;
   width: 100%;
@@ -132,8 +136,8 @@ a {
   font-family: 'Kaushan Script', cursive;
   padding-bottom: 2rem;
   font-size: 2rem;
-  text-decoration: underline;
-  color: white; }
+  color: white;
+  text-decoration: none; }
 
 a:hover {
   color: white;
